@@ -20,7 +20,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
 SECRET_KEY = '$#)jw21vteb#_c(#@2!@ca7@915n699xe(ik)re^)oop32p=+a'
+=======
+SECRET_KEY = '4hgv^po95jg1=)%4i5(x2m72o0kux9$q4a+#b3*k)pi=wg74r-'
+>>>>>>> origin/BranchOsvaldo
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,8 +42,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # External apps
+<<<<<<< HEAD
     'Tienda',
     
+=======
+    'tienda',
+>>>>>>> origin/BranchOsvaldo
 ]
 
 MIDDLEWARE = [
@@ -121,5 +129,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
 STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static')]
 
+=======
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static') ]
+>>>>>>> origin/BranchOsvaldo
