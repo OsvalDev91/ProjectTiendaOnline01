@@ -2,5 +2,10 @@
     box-sizing: content-box;
     width: 100%;
     padding-top: 5px;
-    width: 800px;
+    width: 600px;
+}
+
+#btn01,#btn02{
+    background-color: rgb(212, 209, 211);
+    color: rgb(0, 0, 0);
 }

@@ -1,27 +1,29 @@
 <!-- TiendaOnline/templates/layout/navbar.html -->
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark">
     <div class="navbar-nav mr-auto">
-        <a class="nav-item nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a class="nav-item nav-link" href="#"><i class="fa-solid fa-cart-shopping" style="color: #4c4c55;"></i></i></a>
     </div>
+
     <div id="busquedas">
         <form class="container-fluid">
             <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">Buscar</span>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" placeholder="Buscar">
+                <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa-solid fa-magnifying-glass" style="color: #1f2123;"></i></span>
             </div>
         </form>
     </div>
 
     <div class="navbar-nav ml-auto">
         <!-- Botones de Iniciar sesión y Registrarse -->
-        <a class="nav-item nav-link btn btn-outline-primary mx-2" href="#">Iniciar sesión</a>
-        <a class="nav-item nav-link btn btn-outline-primary my-0" href="#">Registrarse</a>
+        <!-- <a class="nav-item nav-link btn btn-outline-primary mx-2" href="#">Iniciar sesión</a> -->
+        <button type="button" class="btn mx-2" id="btn01" href="#">Iniciar sesión</button>
+        <button type="button" class="btn mx-2 my-0" id="btn02" href="#">Registrarse</button>
     </div>
 </nav>
 
 <!-- Segunda fila del navbar -->
-<nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark text-white">
     <!-- Opciones en la parte izquierda -->
     <ul class="navbar-nav mr-auto"> <!-- Cambiar ml-auto a mr-auto -->
         <li class="nav-item">
@@ -53,8 +55,14 @@
                 ELECTRONICA
             </a>
             <div class="dropdown-menu" aria-labelledby="electronicaDropdown">
-                <!-- Contenido del dropdown de ELECTRONICA -->
                 <!-- Puedes agregar más elementos aquí -->
+                <a class="dropdown-item" href="#">Cocina</a>
+                <a class="dropdown-item" href="#">horno/microondas</a>
+                <a class="dropdown-item" href="#">lavadora/lavarropas</a>
+                <a class="dropdown-item" href="#">lavaplatos/lavavajillas</a>
+                <a class="dropdown-item" href="#">refrigerador/nevera/heladera y congelador</a>
+                <a class="dropdown-item" href="#">campana extractora</a>
+                <a class="dropdown-item" href="#">secadora/secarropas</a>
             </div>
         </li>
     </ul>
