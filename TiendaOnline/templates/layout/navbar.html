@@ -1,60 +1,61 @@
 <!-- TiendaOnline/templates/layout/navbar.html -->
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <!-- Primera fila del navbar -->
-      <div class="navbar-nav mr-auto">
-          <!-- Botón carretilla -->
-          <a class="nav-item nav-link" href="#">Carretilla</a>
-      </div>
-      <div>
-        <form class="form-inline my-2 my-md-0">
-          <!-- Barra de búsqueda -->
-          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-          <!-- Botón de búsqueda -->
-          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
-      </form>
-      </div>
-      
-      <div class="navbar-nav ml-auto">
-          <!-- Botones de Iniciar sesión y Registrarse -->
-          <a class="nav-item nav-link" href="#">Iniciar sesión</a>
-          <a class="nav-item nav-link" href="#">Registrarse</a>
-      </div>
+    <div class="navbar-nav mr-auto">
+        <a class="nav-item nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <div id="busquedas">
+        <form class="container-fluid">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Buscar</span>
+                <input type="text" class="form-control">
+            </div>
+        </form>
+    </div>
+
+    <div class="navbar-nav ml-auto">
+        <!-- Botones de Iniciar sesión y Registrarse -->
+        <a class="nav-item nav-link btn btn-outline-primary mx-2" href="#">Iniciar sesión</a>
+        <a class="nav-item nav-link btn btn-outline-primary my-0" href="#">Registrarse</a>
+    </div>
 </nav>
 
 <!-- Segunda fila del navbar -->
 <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
-      <!-- Opciones en la parte izquierda -->
-      <ul class="navbar-nav mr-auto"> <!-- Cambiar ml-auto a mr-auto -->
-          <li class="nav-item">
-              <a class="nav-link" href="#">INICIO</a>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="ofertasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  OFERTAS
-              </a>
-              <div class="dropdown-menu" aria-labelledby="ofertasDropdown">
-                  <!-- Contenido del dropdown de OFERTAS -->
-                  <!-- Puedes agregar más elementos aquí -->
-              </div>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="computoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  COMPUTO
-              </a>
-              <div class="dropdown-menu" aria-labelledby="computoDropdown">
-                  <!-- Contenido del dropdown de COMPUTO -->
-                  <!-- Puedes agregar más elementos aquí -->
-              </div>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="electronicaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  ELECTRONICA
-              </a>
-              <div class="dropdown-menu" aria-labelledby="electronicaDropdown">
-                  <!-- Contenido del dropdown de ELECTRONICA -->
-                  <!-- Puedes agregar más elementos aquí -->
-              </div>
-          </li>
-      </ul>
+    <!-- Opciones en la parte izquierda -->
+    <ul class="navbar-nav mr-auto"> <!-- Cambiar ml-auto a mr-auto -->
+        <li class="nav-item">
+            <a class="nav-link" href="#">INICIO</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="ofertasDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                OFERTAS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="ofertasDropdown">
+                <!-- Contenido del dropdown de OFERTAS -->
+                <!-- Puedes agregar más elementos aquí -->
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="computoDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                COMPUTO
+            </a>
+            <div class="dropdown-menu" aria-labelledby="computoDropdown">
+                <!-- Contenido del dropdown de COMPUTO -->
+                <!-- Puedes agregar más elementos aquí -->
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="electronicaDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                ELECTRONICA
+            </a>
+            <div class="dropdown-menu" aria-labelledby="electronicaDropdown">
+                <!-- Contenido del dropdown de ELECTRONICA -->
+                <!-- Puedes agregar más elementos aquí -->
+            </div>
+        </li>
+    </ul>
 </nav>

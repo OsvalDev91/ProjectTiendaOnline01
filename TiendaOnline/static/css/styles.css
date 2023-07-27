@@ -1,4 +1,6 @@
-/* CSS personalizado para extender la longitud de la barra de búsqueda */
-.search-bar {
-    width: 300px; /* Cambia el valor según el ancho deseado */
+#busquedas {    
+    box-sizing: content-box;
+    width: 100%;
+    padding-top: 5px;
+    width: 800px;
 }
