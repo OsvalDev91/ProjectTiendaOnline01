@@ -34,15 +34,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block titulo %}{% endblock titulo %} - Tienda Online</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</body>
+
+    <!-- Para llamar css personalizado -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- Para invocar los iconos -->
+    <script src="https://kit.fontawesome.com/57faba85b1.js" crossorigin="anonymous"></script>
 </head>
 >>>>>>> origin/BranchOsvaldo
 <body>
+    {% include 'layout/video.html' %}
     <header>
         <nav>
             {% include 'layout/navbar.html' %}
         </nav>
     </header>
+<<<<<<< HEAD
 <<<<<<< HEAD
 </body>
 
@@ -54,3 +61,19 @@
 </body>
 >>>>>>> origin/BranchOsvaldo
 </html>
+=======
+    <main>
+        {% include 'layout/body.html' %}
+    </main>
+    {% include 'layout/footer.html' %}
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script> -->
+    
+    <!-- ... Resto del código del head ... -->
+    <script src="{% static 'js/efectos.js' %}"></script>
+</body>
+</html>
+>>>>>>> BranchOsvaldo
