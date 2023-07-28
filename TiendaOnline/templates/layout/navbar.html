@@ -1,69 +1,101 @@
-<!-- TiendaOnline/templates/layout/navbar.html -->
-
+{% load static %}
 <nav class="navbar navbar-expand-md navbar-dark">
     <div class="navbar-nav mr-auto">
-        <a class="nav-item nav-link" href="#"><i class="fa-solid fa-cart-shopping" style="color: #4c4c55;"></i></i></a>
+        <img src="{% static 'img/iconos/carretilla.png' %}" class="icon02">
     </div>
 
     <div id="busquedas">
         <form class="container-fluid">
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Buscar">
-                <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa-solid fa-magnifying-glass" style="color: #1f2123;"></i></span>
+                <button type="button" class="btn my-0" id="btn02" href="#"><i class="fa-solid fa-magnifying-glass" style="color: #1f2123;"></i></button>
             </div>
         </form>
     </div>
 
     <div class="navbar-nav ml-auto">
-        <!-- Botones de Iniciar sesión y Registrarse -->
-        <!-- <a class="nav-item nav-link btn btn-outline-primary mx-2" href="#">Iniciar sesión</a> -->
-        <button type="button" class="btn mx-2" id="btn01" href="#">Iniciar sesión</button>
-        <button type="button" class="btn mx-2 my-0" id="btn02" href="#">Registrarse</button>
+        <div class="user">
+            <div class="textcuenta"><p>Mi Cuenta</p></div>            
+            <div>
+                <button type="button" class="btn" id="btn01" href="#">Iniciar sesión</button>
+                <button type="button" class="btn mx-2 my-0" id="btn02" href="#">Registrarse</button>
+            </div>
+        </div>
     </div>
+    <div>
+        <img src="{% static 'img/iconos/user.png' %}" class="icon01">
+    </div>
+    <!-- Botones de Iniciar sesión y Registrarse -->
+
+        <!-- <button type="button" class="btn mx-2" id="btn01" href="#">Iniciar sesión</button>
+        <button type="button" class="btn mx-2 my-0" id="btn02" href="#">Registrarse</button> -->
 </nav>
 
-<!-- Segunda fila del navbar -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark text-white">
-    <!-- Opciones en la parte izquierda -->
-    <ul class="navbar-nav mr-auto"> <!-- Cambiar ml-auto a mr-auto -->
-        <li class="nav-item">
-            <a class="nav-link" href="#">INICIO</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="ofertasDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                OFERTAS
-            </a>
-            <div class="dropdown-menu" aria-labelledby="ofertasDropdown">
-                <!-- Contenido del dropdown de OFERTAS -->
-                <!-- Puedes agregar más elementos aquí -->
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="computoDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                COMPUTO
-            </a>
-            <div class="dropdown-menu" aria-labelledby="computoDropdown">
-                <!-- Contenido del dropdown de COMPUTO -->
-                <!-- Puedes agregar más elementos aquí -->
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="electronicaDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                ELECTRONICA
-            </a>
-            <div class="dropdown-menu" aria-labelledby="electronicaDropdown">
-                <!-- Puedes agregar más elementos aquí -->
-                <a class="dropdown-item" href="#">Cocina</a>
-                <a class="dropdown-item" href="#">horno/microondas</a>
-                <a class="dropdown-item" href="#">lavadora/lavarropas</a>
-                <a class="dropdown-item" href="#">lavaplatos/lavavajillas</a>
-                <a class="dropdown-item" href="#">refrigerador/nevera/heladera y congelador</a>
-                <a class="dropdown-item" href="#">campana extractora</a>
-                <a class="dropdown-item" href="#">secadora/secarropas</a>
-            </div>
-        </li>
-    </ul>
+<!-- --------------------------------------------------------------------------------------------------------------->
+
+<!-- SEGUNDO NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">ICONO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">INICIO</a>
+            </li>
+
+            <li class="nav-item dropdown"> <!-- Agrega la clase "dropdown" -->
+                <a class="nav-link dropdown-toggle text-white text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    OFERTAS <!-- Etiqueta con el texto del menú desplegable -->
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!-- Elementos del submenú -->
+                    <li><a class="dropdown-item" href="#">Categoría 1</a></li>
+                    <li><a class="dropdown-item" href="#">Categoría 2</a></li>
+                    <!-- Agrega más elementos si es necesario -->
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown"> <!-- Agrega la clase "dropdown" -->
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    COMPUTO <!-- Etiqueta con el texto del menú desplegable -->
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!-- Elementos del submenú -->
+                    <li><a class="dropdown-item" href="#">Categoría 1</a></li>
+                    <li><a class="dropdown-item" href="#">Categoría 2</a></li>
+                    <!-- Agrega más elementos si es necesario -->
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown"> <!-- Agrega la clase "dropdown" -->
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ELECTRONICA
+                    <!-- Etiqueta con el texto del menú desplegable -->
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!-- Elementos del submenú -->
+                    <li><a class="dropdown-item" href="#">Categoría 1</a></li>
+                    <li><a class="dropdown-item" href="#">Categoría 2</a></li>
+                    <!-- Agrega más elementos si es necesario -->
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown"> <!-- Agrega la clase "dropdown" -->
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PRODUCTOS <!-- Etiqueta con el texto del menú desplegable -->
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!-- Elementos del submenú -->
+                    <li><a class="dropdown-item" href="#">Cocina</a></li>
+                    <li><a class="dropdown-item" href="#">Horno/microondas</a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li><a class="dropdown-item" href="#">Lavadora/lavaropa</a></li>
+                    <!-- Agrega más elementos si es necesario -->
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
 </nav>
