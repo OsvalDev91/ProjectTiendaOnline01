@@ -1,44 +1,35 @@
-#busquedas {    
+#busquedas {  /* Barra de busqueda*/  
     box-sizing: content-box;
     width: 100%;
     padding-top: 5px;
     width: 600px;
 }
 
-#btn01,#btn02{
+#btn01,#btn02{ /* Botones iniciar y registrarse*/
     background-color: rgb(231, 230, 231);
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
-.user{
+.user{ /* Icono de user posición */
     display: flex;
     flex-direction: column;
 }
 
-.icon01{
+.icon01{ /* Icono de user tamaño */
     height: 75px;
     width: 100%;
 }
 
-.textcuenta {
+.textcuenta { /* Texto mi cuenta*/
     text-align: center; /* Centrar el texto horizontalmente */
     font-weight: bold; /* Aplicar negrita al texto */
 }
 
-/* styles.css o tu archivo CSS personalizado */
-
-.fa-cart-shopping {
-    color: #4c4c55;
-    font-size: 24px; /* Ajusta el tamaño del ícono según tus necesidades */
-}
-
-.icon02{
+.icon02{ /* Icono de carretilla tamaño */
     height: 50px;
     width: 100%;
 }
-
-/* styles.css o tu archivo CSS personalizado */
 
 .footer {
     background-color: #f5f5f5;
@@ -46,18 +37,35 @@
     text-align: center;
 }
 
-/* styles.css o tu archivo CSS personalizado */
-
-body {
-    margin: 0; /* Asegura que no haya margen alrededor del video */
-    overflow:scroll; /* Evita el desbordamiento del video fuera del cuerpo de la página */
+/* Estilos del video*/
+.video-container {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    overflow: hidden;
 }
 
 .video-overlay {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+/* Posición de la barra de tareas hacia abajo*/
+.barra {
+    margin-top: 120px; /* Agrega el margen superior deseado para desplazar el navbar hacia abajo */
     position:static;
-    top: 0;
-    left: 0;
-    width: 600px;
-    height: 200px;
-    z-index: -1; /* Coloca el video detrás del contenido principal */
+    z-index: 1;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+.banner {
+    background: #a770ef;
+    background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
 }
