@@ -64,6 +64,11 @@ body {
     background: #f4f4f4;
 }
 
+#banner01 {
+    background: #242c41;
+    background: -webkit-linear-gradient(to right, #6d82bb, #72688b, #272829);
+    background: linear-gradient(to right, #2c3a46, #496b74, #2f3d46);
+}
 .banner {
     background: #a770ef;
     background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
