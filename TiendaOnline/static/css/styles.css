@@ -17,18 +17,18 @@
 }
 
 .icon01{ /* Icono de user tamaño */
-    height: 75px;
+    height: 50px;
+    width: 100%;
+}
+
+.icon02{ /* Icono de carretilla tamaño */
+    height: 60px;
     width: 100%;
 }
 
 .textcuenta { /* Texto mi cuenta*/
     text-align: center; /* Centrar el texto horizontalmente */
     font-weight: bold; /* Aplicar negrita al texto */
-}
-
-.icon02{ /* Icono de carretilla tamaño */
-    height: 50px;
-    width: 100%;
 }
 
 .footer {
